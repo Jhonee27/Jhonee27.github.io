@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Página</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="costyle.css">
+    <link rel="icon" href="https://iesantateresita.edu.pe/wp-content/uploads/2021/02/cropped-insignia.icon_-e1624899489777.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="menu-icon" id="menu-icon">
+            <span>☰</span>
+        </div>
+        <div class="logo" id="logo">
+            APRENDIENDO JUNTOS
+        </div>
+        <div class="nav-links">
+            <a href="/usuario/Usuario.html">
+                <i class="fas fa-user-plus icon-user"></i>
+            </a>
+        </div>
+    </header>
+
+    <div id="menu" class="menu">
+        <ul>
+            <li><a href="/index.html">INICIO</a></li>
+            <li><a href="/chat/chat.html">CHAT</a></li>
+            <li><a href="/preguntar/preguntar.html">PREGUNTAR</a></li>
+            <li><a href="/compartir/compartir.html">COMPARTIR</a></li>
+            <li><a href="/destacados/destacados.html">DESTACADOS</a></li>
+            <li><a href="/motivación/motivacion.html">MOTIVACIÓN</a></li>
+        </ul>
+    </div>
+
+    <div class="intro-text">
+        <h1>CONSEJOS <i class="fas fa-arrow-left arrow-icon"></i></h1>
+        <p>Acceso a consejos que compartieron otros estudiantes:</p>
+    </div>
+
+    <!-- Nueva sección para mensajes de usuarios -->
+    <div class="user-messages">
+        <h2>Mensajes de Usuarios</h2>
+        <div class="message">
+            <p><strong>María:</strong> "Escribir unas preguntas y respuestas del tema, luego las meto en una cajita y voy sacando una por una y así me aprendo el tema"</p>
+        </div>
+        <div class="message">
+            <p><strong>Jheili:</strong> "Escribir unas preguntas y respuestas del tema, luego las meto en una cajita y voy sacando una por una y así me aprendo el tema"</p>
+        </div>
+        <div class="message">
+            <p><strong>Ana:</strong> "Apaga tus o programa un modo "no molestar" mientras sea tu tiempo de hacer tareas."</p>
+        </div>
+        <div class="message">
+            <p><strong>Valeria :</strong> "Tiempo determinado para cada tarea, puede ser máximo 1 hora para tendrás cada actividad, así tiempo de sobra"</p>
+        </div>
+    </div>
+
+    <div id="chats-container"></div> <!-- Contenedor para los chats -->
+
+    <footer>
+        <p>© 2024 APRENDIENDO JUNTOS ST</p>
+    </footer>
+
+    <!-- Modal para la imagen -->
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+
+    <script src="coscrypt.js"></script>
+</body>
+</html>

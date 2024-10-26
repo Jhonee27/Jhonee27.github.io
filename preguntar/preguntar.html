@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APRENDIENDO JUNTOS ST</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="pstyles.css">
+    <link rel="icon" href="https://iesantateresita.edu.pe/wp-content/uploads/2021/02/cropped-insignia.icon_-e1624899489777.png" type="image/x-icon"> <!-- Reemplaza con la ruta y tipo adecuado -->
+</head>
+<body>
+    <header>
+        <div class="menu-icon" id="menu-icon">
+            <span>☰</span>
+        </div>
+        <div class="logo" id="logo">
+            APRENDIENDO JUNTOS
+        </div>
+        <div class="nav-links">
+            <a href="/usuario/Usuario.html">
+                <i class="fas fa-user-plus icon-user"></i>
+            </a>
+        </div>
+    </header>
+
+    <div id="menu" class="menu">
+        <ul>
+            <li><a href="/index.html">INICIO</a></li>
+            <li><a href="/chat/chat.html">CHAT</a></li>
+            <li><a href="/preguntar/preguntar.html">PREGUNTAR</a></li>
+            <li><a href="/compartir/compartir.html">COMPARTIR</a></li>
+            <li><a href="/destacados/destacados.html">DESTACADOS</a></li>
+            <li><a href="/motivación/motivacion.html">MOTIVACIÓN</a></li>
+        </ul>
+    </div>
+
+    <div class="intro-text-container">
+        <div class="intro-text">
+            <h1>PREGUNTAR</h1>
+            <p>Pregunta alguna duda en forma general, recibirás muchas respuestas</p>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <h2>Haz tu Pregunta</h2>
+        <form id="question-form">
+            <label for="question">Tu Pregunta:</label>
+            <textarea id="question" name="question" rows="5" placeholder="Escribe tu pregunta aquí..."></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Sección de Preguntas sobre Cursos/Materias -->
+    <div class="course-question-box">
+        <h2>Pregunta sobre Cursos/Materias</h2>
+        <!-- Sección de Cuadros de Colores movida dentro de esta sección -->
+        <div class="color-boxes">
+            <button class="color-box" style="background-color: #ff9999;">Matemática</button>
+            <button class="color-box" style="background-color: #78afcd;">Ciencias Sociales</button>
+            <button class="color-box" style="background-color: #ffad6a;">DPCC</button>
+            <button class="color-box" style="background-color: #ffb0cb;">Comunicación</button>
+            <button class="color-box" style="background-color: #72da98;">Ciencia y Tecnología</button>
+            <button class="color-box" style="background-color: #efa7f8;">EPT</button>
+            <button class="color-box" style="background-color: #f8c779;">Religión</button>
+            <button class="color-box" style="background-color: #a5fd81;">Inglés</button>
+        </div>
+    </div>
+
+
+    <!-- Sección de Preguntas Frecuentes -->
+    <div class="faq-box">
+        <h2>Preguntas Frecuentes</h2>
+        <ul>
+            <li>
+                <h3>¿Cómo son los huesos?</h3>
+                <p>Los huesos son estructuras rígidas y resistentes que forman el esqueleto de los vertebrados, incluidos los humanos.</p>
+            </li>
+            <li>
+                <h3>¿Qué es la migración?​</h3>
+                <p>La migración es el movimiento de personas, animales o grupos de un lugar a otro, generalmente de forma temporal o permanente, con el propósito de establecerse en un nuevo destino.</p>
+            </li>
+            <li>
+                <h3>¿Qué es la comunicación?</h3>
+                <p>La comunicación es el proceso de intercambio de información, ideas, pensamientos, sentimientos y mensajes entre dos o más personas o entidades. </p>
+            </li>
+        </ul>
+    </div>
+    <!-- Modal de Pregunta -->
+<div id="question-modal" class="question-modal">
+    <div class="modal-content">
+        <span id="close-modal" class="close-modal">&times;</span>
+        <h2>Haz tu pregunta sobre <span id="selected-course"></span></h2>
+        <form id="modal-form">
+            <label for="modal-question">Tu Pregunta:</label>
+            <textarea id="modal-question" name="modal-question" rows="5" placeholder="Escribe tu pregunta aquí..."></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</div>
+
+
+    
+    <footer>
+        <p>© 2024 APRENDIENDO JUNTOS ST</p>
+    </footer>
+
+    <script src="pscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,321 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #dba7d2;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Estilo del icono de menú */
+.menu-icon span {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Estilo del logo */
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Enlaces de navegación */
+.nav-links {
+    margin-left: auto;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Estilo del ícono de usuario */
+.icon-user {
+    font-size: 25px;
+    color: #333;
+}
+
+/* Menú */
+.menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    background-color: #dba7d2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.menu ul li {
+    padding: 8px 12px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.menu ul li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Estilo del texto introductorio */
+.intro-text {
+    text-align: left;
+    margin: 20px;
+    font-size: 14px;
+    max-width: 400px;
+    margin-left: 150px;
+}
+
+/* Estilo del encabezado dentro del texto introductorio */
+.intro-text h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Estilo del párrafo dentro del texto introductorio */
+.intro-text p {
+    font-size: 12px;
+}
+
+/* Estilos para el recuadro de preguntas */
+.question-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    margin-left: 150px;
+}
+
+.question-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.question-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.question-box label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.question-box textarea {
+    width: 96%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+.question-box button {
+    background-color: #dba7d2;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.question-box button:hover {
+    background-color: #c78fb4;
+    transform: scale(1.05);
+}
+
+.question-box button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.question-box button:active {
+    transform: translateY(2px);
+}
+
+/* Estilos para el recuadro de Preguntas Frecuentes */
+.faq-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 300px auto;
+    margin-left: 150px;
+}
+
+.faq-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.faq-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.faq-box li {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #dba7d2;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff;
+}
+
+.faq-box li:hover {
+    background-color: #c78fb4;
+}
+
+.faq-box h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.faq-box p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+    display: none;
+}
+
+.faq-box li.active p {
+    display: block;
+}
+
+/* Estilos del pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #dba7d2;
+    margin-top: -250px;
+}
+
+/* Estilos para el recuadro de preguntas sobre cursos/materias */
+.course-question-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    max-width: 600px;
+    margin: -300px auto;
+    margin-left: 830px;
+}
+
+.course-question-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.course-question-box .color-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.course-question-box .color-box {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+.course-question-box .color-box:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+/* Estilos para el modal de preguntas */
+.question-modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.modal-content textarea {
+    width: 96%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+.modal-content button {
+    background-color: #dba7d2;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.modal-content button:hover {
+    background-color: #c78fb4;
+}

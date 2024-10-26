@@ -1,0 +1,274 @@
+/* Estilos generales para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffcfc;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #dba7d2;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Estilo del ícono del menú */
+.menu-icon span {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Estilo del logo centrado en el encabezado */
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilos para los enlaces de navegación */
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+/* Estilo del ícono del usuario en los enlaces de navegación */
+.nav-links .icon-user {
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: black;
+}
+
+/* Color del ícono del usuario al pasar el ratón */
+.nav-links .icon-user:hover {
+    color: #5d5d5d;
+}
+
+/* Estilos del menú desplegable */
+.menu {
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 10px;
+    background-color: #dba7d2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Estilos para la lista dentro del menú */
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Estilos para cada ítem en la lista del menú */
+.menu ul li {
+    padding: 8px 12px;
+}
+
+/* Estilos para los enlaces en el menú */
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+/* Estilo al pasar el ratón sobre los ítems del menú */
+.menu ul li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Estilo del texto introductorio */
+.intro-text {
+    text-align: left;
+    margin: 20px;
+    font-size: 14px;
+    max-width: 400px;
+    margin-left: 150px;
+}
+
+/* Estilo del encabezado dentro del texto introductorio */
+.intro-text h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Estilo del párrafo dentro del texto introductorio */
+.intro-text p {
+    font-size: 12px;
+}
+
+/* Estilos del contenedor de imágenes */
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 200px;
+}
+
+/* Estilos para la imagen principal */
+.image-container img.main-image {
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos para la imagen pequeña sobre la imagen principal */
+.image-container img.small-image {
+    position: absolute;
+    top: -60px;
+    right: 10px;
+    width: 60px;
+    height: auto;
+    z-index: 1;
+}
+
+/* Estilos para el texto en la esquina superior izquierda */
+.top-left-text {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Estilos para los iconos dentro de la imagen */
+.icon-images {
+    position: absolute;
+    bottom: 280px;
+    left: 8%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    top: 100px;
+}
+
+/* Estilos para el tamaño de los iconos */
+.icon-size {
+    width: 40px;
+    height: auto;
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #dba7d2;
+    margin-top: 20px;
+}
+
+/* Estilos para el contenedor de chats */
+#chats-container {
+    display: none; /* Ocultar por defecto */
+    position: fixed;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-11.5%); /* Centrar horizontalmente */
+    width: auto;
+    height: auto;
+    z-index: 1000;
+}
+
+/* Estilos para cada cuadro de chat */
+.chat-box {
+    position: relative;
+    width: 548px; /* Ajusta el ancho según tus necesidades */
+    height: 400px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Estilos del encabezado del chat */
+.chat-header {
+    background-color: #dba7d2;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos de la imagen del ícono en el encabezado del chat */
+.chat-header .chat-icon {
+    width: 24px; /* Ajusta el tamaño según tus necesidades */
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Estilo del título del chat en el encabezado */
+.chat-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Estilo del botón de cerrar en el encabezado del chat */
+.chat-header .close-chat {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/* Estilos del contenido del chat */
+.chat-content {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+/* Estilos del área de entrada del chat */
+.chat-input {
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos del campo de entrada del chat */
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Estilos del botón de enviar en el chat */
+.chat-input button {
+    background-color: #dba7d2;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilo del botón de enviar al pasar el ratón */
+.chat-input button:hover {
+    background-color: #b388d8;
+}

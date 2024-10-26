@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio de Sesión</title>
+    <link rel="stylesheet" href="Ustyles.css">
+    <link rel="icon" href="https://iesantateresita.edu.pe/wp-content/uploads/2021/02/cropped-insignia.icon_-e1624899489777.png" type="image/x-icon"> <!-- Reemplaza con la ruta y tipo adecuado -->
+
+</head>
+<body>
+    <div class="container">
+        <div class="tabs">
+            <button class="tab active" onclick="showTab('register')">REGÍSTRATE</button>
+            <button class="tab" onclick="showTab('login')">INICIA SESIÓN</button>
+        </div>
+        <div id="register" class="tab-content">
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+                <button type="button" onclick="showTab('regsig')">Siguiente</button>                 
+            </form>
+        </div>
+        <div id="regsig" class="tab-content">
+            <form>
+                <label for="email">Correo</label>
+                <input type="email" id="email" name="email" placeholder="Correo">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="Contraseña">
+                <label for="repeat-password">Repetir Contraseña</label>
+                <input type="password" id="repeat-password" name="repeat-password" placeholder="Repetir Contraseña">
+                <button type="submit" onclick="redirectToIndex()">Siguiente</button>                 
+            </form>
+        </div>
+        <div id="login" class="tab-content active">
+            <form>
+                <label for="email-login">Correo</label>
+                <input type="email" id="email-login" name="email-login" placeholder="Correo">
+                <label for="password-login">Contraseña</label>
+                <input type="password" id="password-login" name="password-login" placeholder="Contraseña">
+                <a href="#">¿Has olvidado tu contraseña? Inicia sesión con número de teléfono</a>
+                <button type="button" onclick="redirectToIndex()">Iniciar sesión</button>
+                <div class="quick-access">
+                    <span>Acceso rápido con</span>
+                    <button type="button" class="google-login">G</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="Uscript.js"></script>
+    <script>
+        function redirectToIndex() {
+            window.location.href = '/index.html';
+        }
+
+        function showTab(tabName) {
+            const tabs = document.querySelectorAll('.tab-content');
+            const tabButtons = document.querySelectorAll('.tab');
+
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            tabButtons.forEach(button => {
+                button.classList.remove('active');
+            });
+
+            document.getElementById(tabName).classList.add('active');
+            document.querySelector(`.tab[onclick="showTab('${tabName}')"]`).classList.add('active');
+        }
+    </script>
+</body>
+</html>

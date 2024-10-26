@@ -1,0 +1,171 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #dba7d2;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Estilo del icono de menú */
+.menu-icon span {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Estilo del logo */
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Enlaces de navegación */
+.nav-links {
+    margin-left: auto;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Estilo del ícono de usuario */
+.icon-user {
+    font-size: 25px; /* Ajusta el tamaño del ícono de usuario */
+    color: #333;
+}
+
+/* Menú */
+.menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    background-color: #dba7d2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.menu ul li {
+    padding: 8px 12px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.menu ul li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Contenedor del texto de introducción y botón */
+.intro-text-container {
+    display: flex;
+    align-items: flex-start; /* Alinea el texto y el botón al inicio */
+    justify-content: space-between; /* Espacia el texto y el botón */
+    margin: 40px;
+}
+
+/* Texto de introducción */
+.intro-text {
+    flex: 1; /* Permite que el texto ocupe el espacio disponible */
+    font-size: 20px; /* Aumenta el tamaño de la fuente */
+    line-height: 1.5; /* Mejora la legibilidad aumentando el espacio entre líneas */
+    margin-right: 40px; /* Mueve el texto hacia la izquierda */
+    margin-left: 80px;
+}
+
+/* Estilo del botón "Sobre Nosotras" */
+.btn {
+    background-color: #000; /* Color de fondo negro */
+    color: #fff; /* Color del texto blanco */
+    border: none;
+    padding: 15px 120px; /* Ajusta el tamaño del botón */
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+    margin-top: 60px; /* Mueve el botón hacia abajo */
+}
+
+.btn:hover {
+    background-color: #333; /* Color más oscuro al pasar el ratón */
+}
+
+/* Estilo del footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #dba7d2;
+    margin-top: 20px;
+}
+
+/* Estilo específico para la primera imagen */
+img:first-of-type {
+    width: 1250px; /* Ajusta el ancho de la primera imagen */
+    height: auto; /* Mantén la proporción de la imagen */
+    display: block; /* Para centrar, junto con margin */
+    margin: 20px auto; /* Centra la imagen horizontalmente */
+}
+
+/* Contenedor de todas las características */
+.features {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las características se envuelvan si es necesario */
+    gap: 20px; /* Espacio entre cada característica */
+    margin: 40px auto; /* Márgenes superiores e inferiores y laterales ajustados para centrar el contenedor */
+    max-width: 1200px; /* Ajusta el ancho máximo para centrar el contenedor */
+}
+
+/* Estilo de cada característica */
+.feature {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 8px; /* Reduce el relleno */
+    text-align: center;
+    width: 150px; /* Ancho más pequeño para cada característica */
+    margin: 0; /* Elimina el margen izquierdo para centrar el elemento dentro del contenedor */
+}
+
+/* Imagen de la característica */
+.feature img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 4px;
+}
+
+/* Texto de la característica */
+.feature p {
+    margin-top: 8px; /* Ajusta el margen superior */
+    font-size: 12px; /* Tamaño de fuente más pequeño */
+    color: #333;
+}
+/* Estilo del footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #dba7d2;
+    margin-top: 20px;
+}

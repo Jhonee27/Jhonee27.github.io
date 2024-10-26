@@ -1,0 +1,229 @@
+/* Estilos generales para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffcfc;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #dba7d2;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Estilo del ícono del menú */
+.menu-icon span {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Estilo del logo centrado en el encabezado */
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilos para los enlaces de navegación */
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+/* Estilo del ícono del usuario en los enlaces de navegación */
+.nav-links .icon-user {
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: black;
+}
+
+/* Color del ícono del usuario al pasar el ratón */
+.nav-links .icon-user:hover {
+    color: #5d5d5d;
+}
+
+/* Estilo para mostrar el nombre del usuario */
+.user-name {
+    font-size: 16px;
+    color: #333;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Estilos del menú desplegable */
+.menu {
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 10px;
+    background-color: #dba7d2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Estilos para la lista dentro del menú */
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Estilos para cada ítem en la lista del menú */
+.menu ul li {
+    padding: 8px 12px;
+}
+
+/* Estilos para los enlaces en el menú */
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+/* Estilo al pasar el ratón sobre los ítems del menú */
+.menu ul li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Estilo del texto introductorio */
+.intro-text {
+    text-align: left;
+    margin: 20px;
+    font-size: 14px;
+    max-width: 400px;
+    margin-left: 150px;
+}
+
+/* Estilo del encabezado dentro del texto introductorio */
+.intro-text h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Estilo del párrafo dentro del texto introductorio */
+.intro-text p {
+    font-size: 12px;
+}
+
+/* Estilos del contenedor de carrusel */
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+}
+
+/* Estilos del carrusel */
+.carousel {
+    display: flex;
+    gap: 20px;
+    animation: scroll 15s linear infinite;
+}
+
+/* Estilos para los recuadros (tarjetas) en el carrusel */
+.card {
+    flex: 0 0 300px; /* Cambia el tamaño del recuadro */
+    background-color: #fff;
+    padding: 20px; /* Aumenta el padding para más espacio interno */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    height: 200px; /* Ajusta la altura para hacer los recuadros más altos */
+    display: flex; /* Usar flexbox para centrar el contenido */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+}
+
+/* Estilo del contenido dentro del recuadro */
+.card-content {
+    text-align: center;
+}
+
+/* Estilo del nombre del usuario dentro del recuadro */
+.card .user-name {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f98eee; /* Cambia el color del nombre del usuario */
+    margin-bottom: 10px;
+}
+
+/* Estilo del mensaje de motivación */
+.card p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Animación para rotar los mensajes de motivación */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #dba7d2;
+    margin-top: 20px;
+}
+/* Estilos para el contenedor de la lista de mensajes */
+.message-list-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Estilos para el recuadro de la lista de mensajes */
+.message-list {
+    background-color: #c5c5c52b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Estilo del encabezado dentro del recuadro de la lista de mensajes */
+.message-list h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para la lista de mensajes */
+.message-list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para cada ítem en la lista de mensajes */
+.message-list ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Estilo del nombre del usuario en la lista de mensajes */
+.message-list .user-name {
+    font-weight: bold;
+    color: #f98eee; /* Mismo color que en el carrusel */
+}
+

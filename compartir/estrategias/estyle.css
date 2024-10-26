@@ -1,0 +1,215 @@
+/* Estilos generales para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffcfc;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #dba7d2;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Estilo del ícono del menú */
+.menu-icon span {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Estilo del logo centrado en el encabezado */
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilos para los enlaces de navegación */
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+/* Estilo del ícono del usuario en los enlaces de navegación */
+.nav-links .icon-user {
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: black;
+}
+
+/* Color del ícono del usuario al pasar el ratón */
+.nav-links .icon-user:hover {
+    color: #5d5d5d;
+}
+
+/* Estilos del menú desplegable */
+.menu {
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 10px;
+    background-color: #dba7d2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Estilos para la lista dentro del menú */
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Estilos para cada ítem en la lista del menú */
+.menu ul li {
+    padding: 8px 12px;
+}
+
+/* Estilos para los enlaces en el menú */
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+/* Estilo al pasar el ratón sobre los ítems del menú */
+.menu ul li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Estilo del texto introductorio */
+.intro-text {
+    text-align: left;
+    margin: 20px;
+    font-size: 14px;
+    max-width: 400px;
+    margin-left: 150px;
+}
+
+/* Estilo del encabezado dentro del texto introductorio */
+.intro-text h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo de la flecha */
+.arrow-icon {
+    cursor: pointer;
+    margin-left: -300px; /* Ajusta según sea necesario */
+    color: #333;
+    transition: color 0.3s;
+}
+
+/* Cambia de color al pasar el ratón */
+.arrow-icon:hover {
+    color: #5d5d5d;
+}
+
+/* Estilo del párrafo dentro del texto introductorio */
+.intro-text p {
+    font-size: 12px;
+}
+
+/* Estilos para la sección de mensajes de usuarios */
+.user-messages {
+    margin: 20px 150px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del encabezado para los mensajes de usuarios */
+.user-messages h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left;
+}
+
+/* Estilo para cada mensaje */
+.message { 
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-left: 8px solid #dba7d2;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre la imagen y el texto */
+    flex-direction: row; /* Alinea imagen y texto horizontalmente */
+}
+
+/* Estilo para las imágenes en los mensajes */
+.message-img {
+    max-width: 100px;
+    max-height: 100px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Estilos del modal */
+.modal {
+    display: none; /* Oculta el modal por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para el contenido del modal */
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+/* Estilo para el botón de cerrar */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilo para el pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #dba7d2;
+    color: #000000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

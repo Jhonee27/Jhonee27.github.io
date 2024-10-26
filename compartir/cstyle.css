@@ -1,0 +1,208 @@
+/* Estilos generales para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffcfc;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #dba7d2;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Estilo del ícono del menú */
+.menu-icon span {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Estilo del logo centrado en el encabezado */
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilos para los enlaces de navegación */
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+/* Estilo del ícono del usuario en los enlaces de navegación */
+.nav-links .icon-user {
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: black;
+}
+
+/* Color del ícono del usuario al pasar el ratón */
+.nav-links .icon-user:hover {
+    color: #5d5d5d;
+}
+
+/* Estilos del menú desplegable */
+.menu {
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 10px;
+    background-color: #dba7d2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Estilos para la lista dentro del menú */
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Estilos para cada ítem en la lista del menú */
+.menu ul li {
+    padding: 8px 12px;
+}
+
+/* Estilos para los enlaces en el menú */
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+/* Estilo al pasar el ratón sobre los ítems del menú */
+.menu ul li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Estilo del texto introductorio */
+.intro-text {
+    text-align: left;
+    margin: 20px;
+    font-size: 14px;
+    max-width: 400px;
+    margin-left: 150px;
+}
+
+/* Estilo del encabezado dentro del texto introductorio */
+.intro-text h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Estilo del párrafo dentro del texto introductorio */
+.intro-text p {
+    font-size: 12px;
+}
+
+/* Estilos del contenedor de imágenes */
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    margin-left: -1000px;
+    margin-top: -150px;
+}
+
+/* Estilos para la imagen principal */
+.main-image {
+    max-width: 5%;
+    height: auto;
+    border-radius: 80px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el recuadro de estrategias de estudio */
+.study-tips-box {
+    background-color: #ffffff;
+    border: 2px solid #f9d716d7;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 350px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 150px;
+}
+
+/* Estilos para la imagen al lado derecho */
+.study-tips-image .side-image {
+    max-width: 450px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 750px;
+    margin-top: -180px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #dba7d2;
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilos para el contenedor de study-box */
+.study-box-container {
+    display: flex;
+    justify-content: center; /* Alinea horizontalmente los boxes en el centro */
+    gap: 20px; /* Espacio entre los elementos */
+    margin: 100px auto; /* Centra el contenedor y agrega margen vertical */
+}
+
+/* Estilos para los enlaces de los recuadros */
+.study-box-link {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: inherit; /* Mantiene el color del texto */
+}
+
+/* Estilos para los recuadros de estudio */
+.study-box {
+    background-color: #ffffff; /* Color de fondo para el primer contenedor */
+    border: 2px solid #ed8bec;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 200px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animaciones de transición */
+}
+
+/* Estilos al pasar el ratón sobre los recuadros de estudio */
+.study-box:hover {
+    transform: translateY(-5px); /* Efecto de elevación */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Sombra aumentada */
+    cursor: pointer; /* Cursor de mano al pasar el ratón */
+}
+
+/* Estilos para las imágenes dentro de los recuadros de estudio */
+.study-box img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}

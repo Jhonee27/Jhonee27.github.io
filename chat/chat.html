@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APRENDIENDO JUNTOS ST</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="cstyles.css">
+    <link rel="icon" href="https://iesantateresita.edu.pe/wp-content/uploads/2021/02/cropped-insignia.icon_-e1624899489777.png" type="image/x-icon"> <!-- Reemplaza con la ruta y tipo adecuado -->
+</head>
+<body>
+    <header>
+        <div class="menu-icon" id="menu-icon">
+            <span>☰</span>
+        </div>
+        <div class="logo" id="logo">
+            APRENDIENDO JUNTOS
+        </div>
+        <div class="nav-links">
+            <a href="/usuario/Usuario.html">
+                <i class="fas fa-user-plus icon-user"></i>
+            </a>
+        </div>
+    </header>
+
+    <div id="menu" class="menu">
+        <ul>
+            <li><a href="/index.html">INICIO</a></li>
+            <li><a href="/chat/chat.html">CHAT</a></li>
+            <li><a href="/preguntar/preguntar.html">PREGUNTAR</a></li>
+            <li><a href="/compartir/compartir.html">COMPARTIR</a></li>
+            <li><a href="/destacados/destacados.html">DESTACADOS</a></li>
+            <li><a href="/motivación/motivacion.html">MOTIVACIÓN</a></li>
+        </ul>
+    </div>
+
+    <div class="intro-text-container">
+        <div class="intro-text">
+            <h1>CHAT</h1>
+            <p>Crea un chat con estudiantes para pedir su ayuda.</p>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <img src="/imagenes/chat.png" alt="Chat Image" class="main-image">
+        <img src="/imagenes/Diseño sin título (5).png" alt="Imagen adicional" class="small-image">
+        <div class="top-left-text">
+            <h1>TUS CHATS</h1>
+        </div>
+        <div class="icon-images">
+            <button class="icon-item">
+                <img src="/imagenes/historia.png" class="icon-size" alt="Historia Image">
+                <span class="icon-text">Matematicas</span>
+            </button>
+            <button class="icon-item">
+                <img src="/imagenes/Diseño sin título (3).png" class="icon-size" alt="Imagen 3">
+                <span class="icon-text">Historia</span>
+            </button>
+            <button class="icon-item">
+                <img src="/imagenes/Diseño sin título (4).png" class="icon-size" alt="Imagen 4">
+                <span class="icon-text">Ciencias</span>
+            </button>
+        </div>
+    </div>
+
+    <div id="chats-container"></div> <!-- Contenedor para los chats -->
+
+    <footer>
+        <p>© 2024 APRENDIENDO JUNTOS ST</p>
+    </footer>
+
+    <script src="cscript.js"></script>
+</body>
+</html>

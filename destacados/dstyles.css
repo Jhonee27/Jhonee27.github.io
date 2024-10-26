@@ -1,0 +1,335 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #dba7d2;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Estilo del icono de menú */
+.menu-icon span {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Estilo del logo */
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Enlaces de navegación */
+.nav-links {
+    margin-left: auto;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Estilo del ícono de usuario */
+.icon-user {
+    font-size: 25px; /* Ajusta el tamaño del ícono de usuario */
+    color: #333;
+}
+
+/* Menú */
+.menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    background-color: #dba7d2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.menu ul li {
+    padding: 8px 12px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.menu ul li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Recuadros principales */
+.recuadros-container {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.recuadro {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recuadro:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.icon-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.icon-item:hover {
+    transform: scale(1.1);
+}
+
+.icon-size {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.icon-text {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Caja de mensajes */
+.message-list-container {
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.message-list {
+    margin: 0 auto;
+    max-width: 600px; /* Ajusta este valor según el diseño deseado */
+}
+
+.message-list h2 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    color: #dba7d2;
+    text-align: center; /* Centra el título */
+}
+
+.message-box {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; /* Permite colocar elementos en línea dentro */
+    align-items: center;
+}
+
+.user-name {
+    font-weight: bold;
+    color: #e28ac6;
+    margin-right: 8px; /* Espacio entre el nombre y el mensaje */
+}
+
+ul {
+    list-style-type: none; /* Quita los puntos de las listas */
+    padding: 0;
+    margin: 0;
+}
+
+/* Caja de preguntas */
+.question-box {
+    background-color: #eae6f1;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.question-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    resize: vertical;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #dba7d2;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e28ac6;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #dba7d2;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Estilos para los mensajes de usuarios */
+.user-messages {
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.user-messages h2 {
+    margin: 0 0 15px 0;
+    font-size: 20px;
+    color: #dba7d2;
+    text-align: center; /* Centra el título */
+}
+
+.message {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.message p {
+    margin: 0;
+}
+
+.message-img {
+    width: 80px; /* Tamaño de las imágenes ajustado */
+    height: auto;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+        color: #fff;
+    }
+
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-icon.active + .menu ul {
+        display: flex;
+    }
+}
+/* Estilos para la lista de preguntas frecuentes */
+.faq-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.faq-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.faq-item h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #dba7d2;
+}
+
+.faq-item p {
+    margin: 5px 0 0;
+    color: #333;
+}
+
+.intro-text-container {
+    margin-left: 30px; /* Ajusta este valor según el movimiento deseado */
+}
+/* Estilo para el contenedor del encabezado */
+h2 {
+    font-size: 24px; /* Tamaño de fuente del encabezado */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 10px; /* Agrega espacio interno alrededor del texto */
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilo para el enlace dentro del encabezado */
+.recuadro-link {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: #bd32ca7c; /* Color del texto del enlace */
+    font-weight: bold; /* Hace que el texto sea negrita */
+    transition: color 0.3s, transform 0.3s; /* Añade una transición suave para el cambio de color y efectos */
+}
+
+/* Efecto al pasar el ratón sobre el enlace */
+.recuadro-link:hover {
+    color: #ea00ff; /* Color del texto cuando el ratón pasa sobre el enlace */
+    transform: scale(1.05); /* Escala ligeramente el enlace para un efecto de hover */
+}
+
+
+
